@@ -1,10 +1,10 @@
-Redmine::Plugin.register :redmine_hipchat do
-  name 'HipChat'
-  author 'HipChat, Inc.'
-  description 'Sends notifications to a HipChat room.'
+Redmine::Plugin.register :redmine_glip do
+  name 'Glip'
+  author ''
+  description 'Sends notifications to a Glip room.'
   version '2.0.0'
-  url 'https://github.com/hipchat/redmine_hipchat'
-  author_url 'https://www.hipchat.com/'
+  url ''
+  author_url ''
 
   Rails.configuration.to_prepare do
     require_dependency 'hipchat_hooks'
@@ -13,7 +13,7 @@ Redmine::Plugin.register :redmine_hipchat do
     Project.send(:include, RedmineHipchat::Patches::ProjectPatch)
   end
 
-  settings :partial => 'settings/redmine_hipchat',
+  settings :partial => 'settings/redmine_glip',
     :default => {
       :room_id => "",
       :auth_token => "",
