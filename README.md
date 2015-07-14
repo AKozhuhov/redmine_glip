@@ -1,4 +1,4 @@
-Glip Plugin for Redmine
+Glip Plugin for Redmine (NOT READY FOR USE)
 ==========================
 
 This plugin sends messages to your Glip room when issues are created or updated.
